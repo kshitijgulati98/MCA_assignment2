@@ -8,7 +8,8 @@ import random
 from sklearn.preprocessing import normalize, MinMaxScaler
 from sklearn.svm import LinearSVC
 
-from features import spectrogram,MFCC
+from question1 import spectrogram
+from question2 import MFCC
 from sklearn.metrics import precision_score,recall_score, classification_report
 from sklearn.metrics import precision_recall_fscore_support as prs
 
