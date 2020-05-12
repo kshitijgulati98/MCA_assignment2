@@ -139,7 +139,7 @@ train_spec = normalize(np.array(dataset['train_spec']))
 test_spec = normalize(np.array(dataset['val_spec']))
 
 print('Model spectrogram is training')
-model_spec = LinearSVC(random_state=0, tol=1e-5, max_iter = 1000, verbose = 1, C=0.5)
+model_spec = LinearSVC(random_state=0, tol=1e-5, max_iter = 1000, verbose = 1, C=0.05)
 model_spec.fit(train_spec, classes_train)
 print(model_spec.score(test_spec, classes_test))
 Y=model_spec.predict(test_spec)
